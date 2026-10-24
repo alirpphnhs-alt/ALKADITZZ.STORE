@@ -1,2 +1,0 @@
-# ALKADITZZ.STORE
-wepset jualan
