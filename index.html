@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="APPALKADITZ - Langganan aplikasi premium murah & terpercaya. Canva, CapCut, Netflix, ChatGPT, GetContact, Bstation, YouTube, Wink. Proses 1 menit langsung aktif.">
+<meta name="theme-color" content="#6c5ce7">
+<title>APPALKADITZ — Langganan Premium Murah &amp; Terpercaya</title>
+
+<!-- Favicon inline (tanpa file tambahan, biar tetap ringan) -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛒</text></svg>">
+
+<!-- CSS terpisah -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header" id="home">
+  <div class="container header-inner">
+
+    <!-- Brand / Logo -->
+    <a href="#home" class="brand" aria-label="APPALKADITZ - Beranda">
+      <span class="brand-logo" aria-hidden="true">A</span>
+      <span class="brand-text">
+        <strong>APPALKADITZ</strong>
+        <small>Langganan Premium Murah &amp; Terpercaya</small>
+      </span>
+    </a>
+
+    <!-- Navigasi -->
+    <nav class="nav" aria-label="Navigasi utama">
+      <a href="#produk">Produk</a>
+      <a href="#cara-order">Cara Order</a>
+      <a href="#pembayaran">Pembayaran</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <!-- Jam & Tanggal Real-time -->
+    <div class="clock" aria-label="Waktu saat ini">
+      <span class="clock-time" id="clockTime">--:--:--</span>
+      <span class="clock-date" id="clockDate">Memuat tanggal…</span>
+    </div>
+
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================================================
+       HERO / SAMBUTAN
+       ============================================================ -->
+  <section class="hero">
+    <div class="container hero-inner">
+
+      <span class="pill">✨ Selamat Datang di APPALKADITZ</span>
+
+      <h1>
+        Langganan Aplikasi Premium,
+        <span class="grad">Murah &amp; Terpercaya</span>
+      </h1>
+
+      <p class="hero-sub">
+        Nikmati semua aplikasi premium favoritmu dengan harga jauh lebih hemat.
+        Proses cepat, aman, dan bergaransi penuh selama masa aktif.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#produk" class="btn btn-primary">🛍️ Lihat Semua Produk</a>
+        <a href="https://wa.me/6285142276587?text=Halo%20Kak%2C%20saya%20mau%20order%20langganan%20premium%20di%20APPALKADITZ"
+           class="btn btn-ghost" target="_blank" rel="noopener">💬 Chat Admin</a>
+      </div>
+
+      <!-- Info keunggulan -->
+      <ul class="hero-badges">
+        <li>⚡ <strong>1 Menit Langsung Aktif ✅</strong></li>
+        <li>🔒 Aman &amp; Bergaransi</li>
+        <li>💳 Bayar via QRIS</li>
+        <li>🕒 Layanan 24 Jam</li>
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       DAFTAR PRODUK
+       ============================================================ -->
+  <section class="section" id="produk">
+    <div class="container">
+
+      <div class="section-head">
+        <h2>Daftar Produk &amp; Harga</h2>
+        <p>Pilih durasi yang kamu mau, lalu klik <strong>Pesan</strong> — otomatis terhubung ke WhatsApp.</p>
+        <div class="speed-note">⚡ 1 Menit Langsung Aktif ✅</div>
+      </div>
+
+      <div class="grid">
+
+        <!-- ---------- 1. CANVA PREMIUM ---------- -->
+        <article class="card" data-product="CANVA PREMIUM">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true">🎨</div>
+            <div>
+              <h3 class="card-title">CANVA PREMIUM</h3>
+              <p class="card-note">Desain jadi lebih gampang</p>
+            </div>
+          </div>
+
+          <div class="chips" role="group" aria-label="Pilih durasi Canva Premium">
+            <button type="button" class="chip is-active" data-duration="1 Bulan" data-price="5500">
+              <span class="chip-dur">1 Bulan</span><span class="chip-price">Rp 5.500</span>
+            </button>
+            <button type="button" class="chip" data-duration="2 Bulan" data-price="9500">
+              <span class="chip-dur">2 Bulan</span><span class="chip-price">Rp 9.500</span>
+            </button>
+            <button type="button" class="chip" data-duration="3 Bulan" data-price="12500">
+              <span class="chip-dur">3 Bulan</span><span class="chip-price">Rp 12.500</span>
+            </button>
+            <button type="button" class="chip" data-duration="1 Tahun" data-price="30000">
+              <span class="chip-dur">1 Tahun</span><span class="chip-price">Rp 30.000</span>
+            </button>
+          </div>
+
+          <div class="card-bottom">
+            <div class="total-wrap">
+              <span class="total-label">Total</span>
+              <strong class="card-total">Rp 5.500</strong>
+            </div>
+            <button type="button" class="btn-order">Pesan</button>
+          </div>
+        </article>
+
+        <!-- ---------- 2. CAPCUT PRO ---------- -->
+        <article class="card" data-product="CAPCUT PRO">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true">🎬</div>
+            <div>
+              <h3 class="card-title">CAPCUT PRO</h3>
+              <p class="card-note">Editing video tanpa watermark</p>
+            </div>
+          </div>
+
+          <div class="chips" role="group" aria-label="Pilih durasi CapCut Pro">
+            <button type="button" class="chip is-active" data-duration="1 Bulan" data-price="26000">
+              <span class="chip-dur">1 Bulan</span><span class="chip-price">Rp 26.000</span>
+            </button>
+            <button type="button" class="chip" data-duration="2 Bulan" data-price="47000">
+              <span class="chip-dur">2 Bulan</span><span class="chip-price">Rp 47.000</span>
+            </button>
+            <button type="button" class="chip" data-duration="3 Bulan" data-price="56000">
+              <span class="chip-dur">3 Bulan</span><span class="chip-price">Rp 56.000</span>
+            </button>
+          </div>
+
+          <div class="card-bottom">
+            <div class="total-wrap">
+              <span class="total-label">Total</span>
+              <strong class="card-total">Rp 26.000</strong>
+            </div>
+            <button type="button" class="btn-order">Pesan</button>
+          </div>
+        </article>
+
+        <!-- ---------- 3. NETFLIX ---------- -->
+        <article class="card" data-product="NETFLIX">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true">🎥</div>
+            <div>
+              <h3 class="card-title">NETFLIX</h3>
+              <p class="card-note">Nonton film &amp; series tanpa batas</p>
+            </div>
+          </div>
+
+          <div class="chips" role="group" aria-label="Pilih durasi Netflix">
+            <button type="button" class="chip is-active" data-duration="1 Bulan" data-price="21000">
+              <span class="chip-dur">1 Bulan</span><span class="chip-price">Rp 21.000</span>
+            </button>
+            <button type="button" class="chip" data-duration="2 Bulan" data-price="40500">
+              <span class="chip-dur">2 Bulan</span><span class="chip-price">Rp 40.500</span>
+            </button>
+            <button type="button" class="chip" data-duration="3 Bulan" data-price="55500">
+              <span class="chip-dur">3 Bulan</span><span class="chip-price">Rp 55.500</span>
+            </button>
+          </div>
+
+          <div class="card-bottom">
+            <div class="total-wrap">
+              <span class="total-label">Total</span>
+              <strong class="card-total">Rp 21.000</strong>
+            </div>
+            <button type="button" class="btn-order">Pesan</button>
+          </div>
+        </article>
+
+        <!-- ---------- 4. CHATGPT PLUS / PRO ---------- -->
+        <article class="card" data-product="CHATGPT PLUS / PRO">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true">🤖</div>
+            <div>
+              <h3 class="card-title">CHATGPT PLUS / PRO</h3>
+              <p class="card-note">Asisten AI paling powerful</p>
+            </div>
+          </div>
+
+          <div class="chips" role="group" aria-label="Pilih durasi ChatGPT Plus / Pro">
+            <button type="button" class="chip is-active" data-duration="1 Bulan" data-price="30000">
+              <span class="chip-dur">1 Bulan</span><span class="chip-price">Rp 30.000</span>
+            </button>
+            <button type="button" class="chip" data-duration="2 Bulan" data-price="65000">
+              <span class="chip-dur">2 Bulan</span><span class="chip-price">Rp 65.000</span>
+            </button>
+            <button type="button" class="chip" data-duration="3 Bulan" data-price="280000">
+              <span class="chip-dur">3 Bulan</span><span class="chip-price">Rp 280.000</span>
+            </button>
+          </div>
+
+          <div class="card-bottom">
+            <div class="total-wrap">
+              <span class="total-label">Total</span>
+              <strong class="card-total">Rp 30.000</strong>
+            </div>
+            <button type="button" class="btn-order">Pesan</button>
+          </div>
+        </article>
+
+        <!-- ---------- 5. GETCONTACT PREMIUM ---------- -->
+        <article class="card" data-product="GETCONTACT PREMIUM">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true">📞</div>
+            <div>
+              <h3 class="card-title">GETCONTACT PREMIUM</h3>
+              <p class="card-note">Kenali nomor tak dikenal</p>
+            </div>
+          </div>
+
+          <div class="chips" role="group" aria-label="Pilih durasi GetContact Premium">
+            <button type="button" class="chip is-active" data-duration="1 Bulan" data-price="13000">
+              <span class="chip-dur">1 Bulan</span><span class="chip-price">Rp 13.000</span>
+            </button>
+            <button type="button" class="chip" data-duration="2 Bulan" data-price="25000">
+              <span class="chip-dur">2 Bulan</span><span class="chip-price">Rp 25.000</span>
+            </button>
+            <button type="button" class="chip" data-duration="3 Bulan" data-price="31500">
+              <span class="chip-dur">3 Bulan</span><span class="chip-price">Rp 31.500</span>
+            </button>
+          </div>
+
+          <div class="card-bottom">
+            <div class="total-wrap">
+              <span class="total-label">Total</span>
+              <strong class="card-total">Rp 13.000</strong>
+            </div>
+            <button type="button" class="btn-order">Pesan</button>
+          </div>
+        </article>
+
+        <!-- ---------- 6. BSTATION PREMIUM ---------- -->
+        <article class="card" data-product="BSTATION PREMIUM">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true">📺</div>
+            <div>
+              <h3 class="card-title">BSTATION PREMIUM</h3>
+              <p class="card-note">Nonton anime &amp; drama legal</p>
+            </div>
+          </div>
+
+          <div class="chips" role="group" aria-label="Pilih durasi Bstation Premium">
+            <button type="button" class="chip is-active" data-duration="1 Bulan" data-price="15000">
+              <span class="chip-dur">1 Bulan</span><span class="chip-price">Rp 15.000</span>
+            </button>
+            <button type="button" class="chip" data-duration="2 Bulan" data-price="28500">
+              <span class="chip-dur">2 Bulan</span><span class="chip-price">Rp 28.500</span>
+            </button>
+            <button type="button" class="chip" data-duration="3 Bulan" data-price="43500">
+              <span class="chip-dur">3 Bulan</span><span class="chip-price">Rp 43.500</span>
+            </button>
+          </div>
+
+          <div class="card-bottom">
+            <div class="total-wrap">
+              <span class="total-label">Total</span>
+              <strong class="card-total">Rp 15.000</strong>
+            </div>
+            <button type="button" class="btn-order">Pesan</button>
+          </div>
+        </article>
+
+        <!-- ---------- 7. YOUTUBE PREMIUM ---------- -->
+        <article class="card" data-product="YOUTUBE PREMIUM">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true">▶️</div>
+            <div>
+              <h3 class="card-title">YOUTUBE PREMIUM</h3>
+              <p class="card-note">Bebas iklan + background play</p>
+            </div>
+          </div>
+
+          <div class="chips" role="group" aria-label="Pilih durasi YouTube Premium">
+            <button type="button" class="chip is-active" data-duration="1 Bulan" data-price="15000">
+              <span class="chip-dur">1 Bulan</span><span class="chip-price">Rp 15.000</span>
+            </button>
+            <button type="button" class="chip" data-duration="2 Bulan" data-price="31000">
+              <span class="chip-dur">2 Bulan</span><span class="chip-price">Rp 31.000</span>
+            </button>
+            <button type="button" class="chip" data-duration="3 Bulan" data-price="43000">
+              <span class="chip-dur">3 Bulan</span><span class="chip-price">Rp 43.000</span>
+            </button>
+          </div>
+
+          <div class="card-bottom">
+            <div class="total-wrap">
+              <span class="total-label">Total</span>
+              <strong class="card-total">Rp 15.000</strong>
+            </div>
+            <button type="button" class="btn-order">Pesan</button>
+          </div>
+        </article>
+
+        <!-- ---------- 8. WINK PREMIUM ---------- -->
+        <article class="card" data-product="WINK PREMIUM">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true">✨</div>
+            <div>
+              <h3 class="card-title">WINK PREMIUM</h3>
+              <p class="card-note">Edit foto &amp; video makin glowing</p>
+            </div>
+          </div>
+
+          <div class="chips" role="group" aria-label="Pilih durasi Wink Premium">
+            <button type="button" class="chip is-active" data-duration="7 Hari" data-price="5000">
+              <span class="chip-dur">7 Hari</span><span class="chip-price">Rp 5.000</span>
+            </button>
+          </div>
+
+          <div class="card-bottom">
+            <div class="total-wrap">
+              <span class="total-label">Total</span>
+              <strong class="card-total">Rp 5.000</strong>
+            </div>
+            <button type="button" class="btn-order">Pesan</button>
+          </div>
+        </article>
+
+      </div><!-- /grid -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CARA ORDER
+       ============================================================ -->
+  <section class="section section-alt" id="cara-order">
+    <div class="container">
+
+      <div class="section-head">
+        <h2>Cara Order</h2>
+        <p>Hanya 4 langkah, pesananmu langsung diproses.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">1</span>
+          <h3>Pilih Produk</h3>
+          <p>Tentukan aplikasi premium dan durasi yang kamu inginkan.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">2</span>
+          <h3>Klik Pesan</h3>
+          <p>Pesan otomatis terkirim ke WhatsApp admin dengan detail order.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">3</span>
+          <h3>Bayar via QRIS</h3>
+          <p>Lakukan pembayaran melalui QRIS — semua e-wallet &amp; m-banking.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">4</span>
+          <h3>Langsung Aktif</h3>
+          <p>Rata-rata <strong>1 menit</strong> akun premium kamu sudah aktif ✅</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PEMBAYARAN
+       ============================================================ -->
+  <section class="section" id="pembayaran">
+    <div class="container">
+
+      <div class="section-head">
+        <h2>Metode Pembayaran</h2>
+        <p>Pembayaran cepat, aman, dan otomatis terverifikasi.</p>
+      </div>
+
+      <div class="pay-wrap">
+
+        <div class="pay-card">
+          <div class="pay-icon" aria-hidden="true">📱</div>
+          <h3>QRIS</h3>
+          <p>Scan sekali, langsung bayar. Mendukung GoPay, OVO, DANA, ShopeePay, LinkAja, dan semua m-banking.</p>
+          <a href="https://wa.me/6285142276587?text=Halo%20Kak%2C%20saya%20mau%20minta%20QRIS%20untuk%20pembayaran%20di%20APPALKADITZ"
+             class="btn btn-primary btn-block" target="_blank" rel="noopener">💳 Bayar via QRIS</a>
+        </div>
+
+        <div class="pay-card">
+          <div class="pay-icon" aria-hidden="true">💬</div>
+          <h3>WhatsApp Admin</h3>
+          <p>Ada pertanyaan atau mau order manual? Chat admin kami langsung, dibalas cepat 24 jam.</p>
+          <a href="https://wa.me/6285142276587?text=Halo%20Kak%2C%20saya%20mau%20order%20langganan%20premium%20di%20APPALKADITZ"
+             class="btn btn-wa btn-block" target="_blank" rel="noopener">💬 Chat via WhatsApp</a>
+        </div>
+
+      </div>
+
+      <p class="pay-note">
+        🔒 Nomor resmi admin: <strong>+62 851-4227-6587</strong> — pastikan hanya membayar ke nomor ini.
+      </p>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER / KONTAK
+     ============================================================ -->
+<footer class="site-footer" id="kontak">
+  <div class="container footer-inner">
+
+    <div class="footer-col footer-brand">
+      <div class="brand brand-footer">
+        <span class="brand-logo" aria-hidden="true">A</span>
+        <span class="brand-text">
+          <strong>APPALKADITZ</strong>
+          <small>Langganan Premium Murah &amp; Terpercaya</small>
+        </span>
+      </div>
+      <p class="footer-desc">
+        Menyediakan berbagai langganan aplikasi premium dengan harga termurah,
+        proses tercepat, dan garansi penuh selama masa aktif.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigasi</h4>
+      <ul class="footer-links">
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#cara-order">Cara Order</a></li>
+        <li><a href="#pembayaran">Pembayaran</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Kontak Kami</h4>
+      <ul class="footer-links">
+        <li><a href="https://wa.me/6285142276587" target="_blank" rel="noopener">💬 WhatsApp: +62 851-4227-6587</a></li>
+        <li>🕒 Layanan: 24 Jam</li>
+        <li>⚡ Proses: 1 Menit Langsung Aktif ✅</li>
+        <li>💳 Pembayaran: QRIS</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; <span id="year">2025</span> <strong>APPALKADITZ</strong>. Seluruh hak cipta dilindungi.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Notifikasi ringan (toast) -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- JS terpisah -->
+<script src="script.js" defer></script>
+</body>
+</html>
